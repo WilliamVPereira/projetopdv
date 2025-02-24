@@ -3,7 +3,9 @@ Nosso objetivo é desenvolver um sistema de vendas simples para aplicar os conce
 Tecnologias Utilizadas:
 
 -Frontend: HTML, CSS, JavaScript
--Backend: Node.j
+
+-Backend: Node.js
+
 -Banco de Dados: MySQL
 
 Metodologias e Práticas
