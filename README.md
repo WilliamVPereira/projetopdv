@@ -14,5 +14,7 @@ Tecnologias Utilizadas:
 Metodologias e Práticas
 
 -CI/CD: Integração e entrega contínuas para manter a qualidade do software.
+
 -TDD: Desenvolvimento orientado a testes para garantir a confiabilidade do código.
+
 -Controle de Acesso: Implementação de regras para gestão de usuários e permissões.
