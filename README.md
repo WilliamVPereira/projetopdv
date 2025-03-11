@@ -20,8 +20,9 @@ Na arquitetura monolítica, o sistema será desenvolvido utilizando o padrão MV
 ### MCV
 - **Model (Modelo)**: Representa os dados e a lógica de negócios do sistema. Ele é responsável pela manipulação das informações, como o acesso ao banco de dados e a validação dos dados.
 - **View (Visão)**: É a interface do usuário, ou seja, o que o usuário vê e interage. A View exibe as informações fornecidas pelo Modelo e recebe as ações do usuário.
-- **Controller (Controlador)**: Atua como intermediário entre o Modelo e a Visão. Ele recebe as ações do usuário (como cliques ou preenchimento de formulários), processa essas informações e atualiza o Modelo e a View conforme necessário.  
-  Esse padrão ajuda a organizar o código, facilitando a manutenção e escabilidade do sistema, além de permitir que diferentes partes da aplicação sejam desenvolvidas de forma independente. Ao manter essas responsabilidades separadas, o MVC facilita a gestão do sistema, tornando o código mais limpo e modular dentro da arquitetura monolítica.
+- **Controller (Controlador)**: Atua como intermediário entre o Modelo e a Visão. Ele recebe as ações do usuário (como cliques ou preenchimento de formulários), processa essas informações e atualiza o Modelo e a View conforme necessário.
+
+Esse padrão ajuda a organizar o código, facilitando a manutenção e escabilidade do sistema, além de permitir que diferentes partes da aplicação sejam desenvolvidas de forma independente. Ao manter essas responsabilidades separadas, o MVC facilita a gestão do sistema, tornando o código mais limpo e modular dentro da arquitetura monolítica.
 
 ## TECNOLOGIAS ESCOLHIDAS
 - **Frontend: HTML, CSS e JavaScript**, por serem tecnologias amplamente utilizadas e de fácil aprendizado, permitindo a criação de uma interface simples e responsiva para o usuário.
