@@ -3,7 +3,7 @@
 **Centro Universitário Católica de Joinville**  
 **Alunos: Nathalia Berri e William Pereira**  
 
-### Nosso objetivo é desenvolver um sistema de vendas simples para aplicar os conceitos da disciplina de Programação Web, explorando tecnologias frontend, backend e banco de dados, além de práticas como CI/CD, TDD e controle de acesso.
+Nosso objetivo é desenvolver um sistema de vendas simples para aplicar os conceitos da disciplina de Programação Web, explorando tecnologias frontend, backend e banco de dados, além de práticas como CI/CD, TDD e controle de acesso.
 
 ## ESTRATÉGIAS DE DESENVOLVIMENTO
 As estratégias de desenvolvimento para o sistema serão focadas em agilidade, qualidade e escalabilidade. O desenvolvimento seguirá uma abordagem incremental e iterativa, com ciclos curtos de planejamento, implementação, testes e feedback direto do professor, permitindo ajustes rápidos ao longo do processo. Algumas das principais estratégias incluem:
