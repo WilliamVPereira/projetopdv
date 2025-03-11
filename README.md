@@ -17,7 +17,7 @@ As estratégias de desenvolvimento para o sistema serão focadas em agilidade, q
 O sistema utilizará uma **arquitetura monolítica** devido à sua simplicidade de desenvolvimento, implantação e manutenção, sendo mais adequada para um primeiro projeto. Como se trata de um sistema de vendas simples, a abordagem monolítica permite integrar todas as funcionalidades em um único código-fonte, reduzindo a complexidade na comunicação entre módulos e facilitando o gerenciamento do banco de dados. Além disso, essa estrutura exige menos configurações e recursos computacionais, tornando a implementação mais ágil e eficiente dentro do contexto acadêmico. Caso seja necessário no futuro, a aplicação poderá ser refatorada para microserviços conforme a demanda por escalabilidade e modularidade aumentar.  
 
 Na arquitetura monolítica, o sistema será desenvolvido utilizando o padrão MVC (Model-View-Controller), que organiza a aplicação em três componentes principais:  
-## MCV
+### MCV
 - **Model (Modelo)**: Representa os dados e a lógica de negócios do sistema. Ele é responsável pela manipulação das informações, como o acesso ao banco de dados e a validação dos dados.
 - **View (Visão)**: É a interface do usuário, ou seja, o que o usuário vê e interage. A View exibe as informações fornecidas pelo Modelo e recebe as ações do usuário.
 - **Controller (Controlador)**: Atua como intermediário entre o Modelo e a Visão. Ele recebe as ações do usuário (como cliques ou preenchimento de formulários), processa essas informações e atualiza o Modelo e a View conforme necessário.  
