@@ -2,7 +2,7 @@
 **PROGRAMAÇÃO WEB**  
 **Centro Universitário Católica de Joinville**  
 **Alunos: Nathalia Berri e William Pereira**  
-[ATIVIDADE 1 - Nathalia e William.pdf](https://github.com/user-attachments/files/19172431/ATIVIDADE.1.-.Nathalia.e.William.pdf)
+[ATIVIDADE 1 - Nathalia e William (1).pdf](https://github.com/user-attachments/files/19172992/ATIVIDADE.1.-.Nathalia.e.William.1.pdf)
 
 Nosso objetivo é desenvolver um sistema de vendas simples para aplicar os conceitos da disciplina de Programação Web, explorando tecnologias frontend, backend e banco de dados, além de práticas como CI/CD, TDD e controle de acesso.
 
