@@ -1,7 +1,7 @@
 # PROJETO PDV
-**PROGRAMAÇÃO WEB
-Centro Universitário Católica de Joinville
-Alunos: Nathalia Berri e William Pereira**
+**PROGRAMAÇÃO WEB**
+**Centro Universitário Católica de Joinville**
+**Alunos: Nathalia Berri e William Pereira**
 
 ### Nosso objetivo é desenvolver um sistema de vendas simples para aplicar os conceitos da disciplina de Programação Web, explorando tecnologias frontend, backend e banco de dados, além de práticas como CI/CD, TDD e controle de acesso.
 
