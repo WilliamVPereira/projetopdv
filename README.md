@@ -23,43 +23,43 @@ O sistema utilizará uma **arquitetura monolítica** devido à sua simplicidade 
 - **Controle de Versão: Git/GitHub**, permitindo colaboração e rastreamento das alterações no código, garantindo organização e segurança no desenvolvimento.
 
 ## REQUISITOS FUNCIONAIS
-RF001. O sistema deve permitir que usuários façam login utilizando e-mail e senha.
-RF002. O sistema deve autenticar os usuários utilizando JWT (JSON Web Token).
-RF003. O sistema deve permitir diferentes níveis de acesso (exemplo: operador de caixa, gerente, administrador).
-RF004. O sistema deve permitir o CRUD de produtos (cadastrar, visualizar, editar e excluir produtos).
-RF005. Cada produto deve conter nome, descrição, preço, código de barras, categoria e quantidade em estoque.
-RF006. O sistema deve controlar o saldo de estoque e reduzir automaticamente a quantidade disponível após cada venda.
-RF007. O sistema deve permitir o CRUD de clientes.
-RF008. Cada cliente deve conter nome, CPF/CNPJ, telefone, e-mail, CEP e número do logradouro.
-RF009. O sistema deve permitir associar uma venda a um cliente previamente cadastrado.
-RF010. O sistema deve permitir adicionar produtos ao carrinho.
-RF011. O sistema deve calcular automaticamente o total da compra.
-RF012. O sistema deve permitir remover produtos do carrinho.
-RF013. O sistema deve permitir a seleção de um cliente antes da finalização da compra.
-RF014. O sistema deve permitir escolher a forma de pagamento (dinheiro, cartão de crédito/débito, PIX).
-RF015. O sistema deve calcular o troco quando necessário.
-RF016. O sistema deve confirmar o pagamento antes de finalizar a venda.
-RF017. O sistema deve gerar um comprovante de venda contendo os detalhes do fornecedor (loja), do cliente,  dos produtos vendidos, valores e forma de pagamento.
-RF018. O sistema deve gerar um número único para cada nota fiscal.
-RF019. O sistema deve utilizar o Singleton para garantir que a loja tenha um único CNPJ na nota fiscal.
-RF020. O sistema deve armazenar o histórico de vendas.
-RF021. O sistema deve permitir a consulta de vendas por data e cliente.
-RF022. O sistema deve permitir gerar relatórios simples, como total de vendas do dia.
+RF001. O sistema deve permitir que usuários façam login utilizando e-mail e senha.  
+RF002. O sistema deve autenticar os usuários utilizando JWT (JSON Web Token).  
+RF003. O sistema deve permitir diferentes níveis de acesso (exemplo: operador de caixa, gerente, administrador).  
+RF004. O sistema deve permitir o CRUD de produtos (cadastrar, visualizar, editar e excluir produtos).  
+RF005. Cada produto deve conter nome, descrição, preço, código de barras, categoria e quantidade em estoque.  
+RF006. O sistema deve controlar o saldo de estoque e reduzir automaticamente a quantidade disponível após cada venda.  
+RF007. O sistema deve permitir o CRUD de clientes.  
+RF008. Cada cliente deve conter nome, CPF/CNPJ, telefone, e-mail, CEP e número do logradouro.  
+RF009. O sistema deve permitir associar uma venda a um cliente previamente cadastrado.  
+RF010. O sistema deve permitir adicionar produtos ao carrinho.  
+RF011. O sistema deve calcular automaticamente o total da compra.  
+RF012. O sistema deve permitir remover produtos do carrinho.  
+RF013. O sistema deve permitir a seleção de um cliente antes da finalização da compra.  
+RF014. O sistema deve permitir escolher a forma de pagamento (dinheiro, cartão de crédito/débito, PIX).  
+RF015. O sistema deve calcular o troco quando necessário.  
+RF016. O sistema deve confirmar o pagamento antes de finalizar a venda.  
+RF017. O sistema deve gerar um comprovante de venda contendo os detalhes do fornecedor (loja), do cliente,  dos produtos vendidos, valores e forma de pagamento.  
+RF018. O sistema deve gerar um número único para cada nota fiscal.  
+RF019. O sistema deve utilizar o Singleton para garantir que a loja tenha um único CNPJ na nota fiscal.  
+RF020. O sistema deve armazenar o histórico de vendas.  
+RF021. O sistema deve permitir a consulta de vendas por data e cliente.  
+RF022. O sistema deve permitir gerar relatórios simples, como total de vendas do dia.  
 
 ## REQUISITOS NÃO FUNCIONAIS
-RFN001. Arquitetura Monolítica: O sistema deve ser desenvolvido utilizando a arquitetura monolítica, onde todas as funcionalidades serão integradas em uma única aplicação.
-RFN002. Senhas de usuários devem ser criptografadas utilizando bcrypt ou outro algoritmo seguro.
-RFN003. O sistema deve restringir acessos indevidos com controle de permissões baseado em papéis (exemplo: caixa, gerente, administrador).
-RFN004. O sistema deve registrar logs de autenticação e ações críticas para auditoria.
-RFN005. O tempo de resposta das requisições deve ser inferior a 1 segundo para operações comuns.
-RFN006. O sistema deve suportar múltiplas transações simultâneas sem degradação de desempenho.
-RFN007. A interface do usuário deve ser intuitiva e responsiva, funcionando em diferentes dispositivos e tamanhos de tela.
-RFN008. As telas devem seguir um fluxo lógico e minimizar a necessidade de cliques desnecessários.
-RFN009. As telas devem seguir um fluxo lógico e minimizar a necessidade de cliques desnecessários.
-RFN010. O design deve seguir um padrão moderno e agradável, utilizando boas práticas de UI/UX.
-RFN011. O código deve ser modular e seguir boas práticas de desenvolvimento, facilitando manutenção e evolução.
-RFN012. O sistema deve ter testes automatizados implementados (TDD) para garantir confiabilidade.
-RFN013. O projeto deve ser versionado com Git/GitLab, permitindo rastreamento de mudanças e colaboração.
-RFN014. Deve ser possível realizar backup periódico dos dados, evitando perda de informações.
-RFN015. O sistema deve contar com um pipeline de CI/CD para automação de testes e deploy contínuo.
-RFN016. O ambiente de desenvolvimento deve permitir testes locais antes da implantação.
+RFN001. Arquitetura Monolítica: O sistema deve ser desenvolvido utilizando a arquitetura monolítica, onde todas as funcionalidades serão integradas em uma única aplicação.  
+RFN002. Senhas de usuários devem ser criptografadas utilizando bcrypt ou outro algoritmo seguro.  
+RFN003. O sistema deve restringir acessos indevidos com controle de permissões baseado em papéis (exemplo: caixa, gerente, administrador).  
+RFN004. O sistema deve registrar logs de autenticação e ações críticas para auditoria.  
+RFN005. O tempo de resposta das requisições deve ser inferior a 1 segundo para operações comuns.  
+RFN006. O sistema deve suportar múltiplas transações simultâneas sem degradação de desempenho.  
+RFN007. A interface do usuário deve ser intuitiva e responsiva, funcionando em diferentes dispositivos e tamanhos de tela.  
+RFN008. As telas devem seguir um fluxo lógico e minimizar a necessidade de cliques desnecessários.  
+RFN009. As telas devem seguir um fluxo lógico e minimizar a necessidade de cliques desnecessários.  
+RFN010. O design deve seguir um padrão moderno e agradável, utilizando boas práticas de UI/UX.  
+RFN011. O código deve ser modular e seguir boas práticas de desenvolvimento, facilitando manutenção e evolução.  
+RFN012. O sistema deve ter testes automatizados implementados (TDD) para garantir confiabilidade.  
+RFN013. O projeto deve ser versionado com Git/GitLab, permitindo rastreamento de mudanças e colaboração.  
+RFN014. Deve ser possível realizar backup periódico dos dados, evitando perda de informações.  
+RFN015. O sistema deve contar com um pipeline de CI/CD para automação de testes e deploy contínuo.  
+RFN016. O ambiente de desenvolvimento deve permitir testes locais antes da implantação.  
