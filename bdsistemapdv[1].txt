@@ -1,0 +1,45 @@
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE TABLE usuario (
+    id SERIAL PRIMARY KEY,
+    nome_usuario VARCHAR(100) UNIQUE NOT NULL,
+    email_usuario VARCHAR(100) UNIQUE NOT NULL,         	-- E-mail único e obrigatório
+	senha TEXT NOT NULL,						 			-- Usando TEXT em vez de VARCHAR pois TEXT é ilimitado os caract
+	tipo_acesso VARCHAR (10) NOT NULL DEFAULT 'caixa'   	-- Caso não coloque nada, o sistema entende que é um vendedor no cadastro
+	-- Daria ainda para usar TIMESTAMP, porém não achei necessário
+);
+
+CREATE TABLE produtos (
+	id SERIAL PRIMARY KEY,
+	descricao VARCHAR (50) NOT NULL,           			-- Exemplo: produto manga 20 kg
+	preco NUMERIC (10, 2) NOT NULL,
+	codigo_barras VARCHAR (13) UNIQUE,
+	qtd_estoque INTEGER NOT NULL DEFAULT 0
+);
+
+CREATE TABLE cliente (
+	id SERIAL PRIMARY KEY,
+	nome_cliente VARCHAR (100) NOT NULL,
+	telefone_cliente VARCHAR(15) NOT NULL,
+	email_cliente VARCHAR (100) UNIQUE,
+	cep VARCHAR (8),
+	numero_casa VARCHAR (10)
+);
+
+CREATE TABLE vendas (
+	id SERIAL PRIMARY KEY,
+    id_usuario INT NOT NULL, 								-- Vendedor 
+    id_cliente INT, 										-- Cliente, não precisa ser obrigatório pra NFC-e
+    data_venda TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+    valor_total NUMERIC(10, 2) NOT NULL,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id)		-- Relacionamento com a tabela de usuários
+);
+
+CREATE TABLE itens_venda (
+    id SERIAL PRIMARY KEY,
+    id_venda INT NOT NULL,
+    id_produto INT NOT NULL, 
+    quantidade_venda INT NOT NULL,
+    valor_produtos NUMERIC(10, 2) NOT NULL, 				-- Valor produtos e valor total podem ser diferentes, visto que pode ocorrer de ter frete
+    FOREIGN KEY (id_venda) REFERENCES vendas(id), 
+    FOREIGN KEY (id_produto) REFERENCES produtos(id) 
+);
