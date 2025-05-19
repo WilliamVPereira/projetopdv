@@ -7,7 +7,7 @@
     font-family: 'Jost', sans-serif;
 }
 
-login{
+body {
     position: relative;
     width: 100%; /* largura */
     min-height: 100vh; /* altura mínima (pega a tela inteira) */
@@ -19,7 +19,7 @@ login{
     overflow: hidden;
 }
 
-.login-box{
+.login-box {
     position: relative;
     text-align: center;
     top: 0;
@@ -32,18 +32,18 @@ login{
     transition: transform 0.2s;
 }
 
-h1{
+h1 {
     font-size: 30px;
     font-weight: bold;
     color: #553880;
 }
 
-h3{
+h3 {
     font-size: 20px;
     font-weight: 350;
 }
 
-label{
+label {
     display: block;
     width: 100%;
     margin-top: 10px;
@@ -55,7 +55,7 @@ label{
     font-size: 20px;
 }
 
-input{
+input {
     display: block;
     width: 100%;
     margin-bottom: 15px;
@@ -66,7 +66,7 @@ input{
     font-size: 15px;
 }
 
-button{
+button {
     padding: 15px;
     border-radius: 10px;
     margin-top: 15px;
@@ -79,8 +79,21 @@ button{
     font-size: 16px;
 }
 
-.entrar{
+.entrar {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+a {
+    display: block;                  /* Deixa o link ocupar uma linha inteira */
+    margin-top: 10px;                /* Espaçamento acima do link */
+    color: #553880;                
+    font-size: 14px;                 
+    text-decoration: none;           /* Remove o sublinhado padrão */
+    transition: color 0.3s;          /* Adiciona uma transição suave na cor ao passar o mouse */
+}
+
+a:hover {
+    color: #774EB3;                  /* Cor muda ao passar o mouse */
 }
