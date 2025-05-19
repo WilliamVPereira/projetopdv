@@ -14,12 +14,19 @@
     "bcrypt": "^6.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0",
+    "express": "^4.21.2",
     "jsonwebtoken": "^9.0.2",
-    "mysql2": "^3.14.1",
-    "pg": "^8.16.0"
+    "mysql2": "^3.14.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WilliamVPereira/projetopdv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WilliamVPereira/projetopdv/issues"
+  },
+  "homepage": "https://github.com/WilliamVPereira/projetopdv#readme"
 }
