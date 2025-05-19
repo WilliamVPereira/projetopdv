@@ -1,6 +1,6 @@
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
 CREATE TABLE usuario (
-    id SERIAL PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     nome_usuario VARCHAR(100) UNIQUE NOT NULL,
     email_usuario VARCHAR(100) UNIQUE NOT NULL,         	-- E-mail único e obrigatório
 	senha TEXT NOT NULL,						 			-- Usando TEXT em vez de VARCHAR pois TEXT é ilimitado os caract
